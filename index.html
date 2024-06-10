@@ -56,7 +56,4 @@ for name, lat, lon in jiro_locations_extended:
     folium.Marker([lat, lon], popup=name).add_to(map_japan)
 
 # 地図を保存
-map_japan_path = "japan_ramen_jiro_map.html"
-map_japan.save(map_japan_path)
-
-map_japan_path
+map_japan.save("japan_ramen_jiro_map.html")
